@@ -4,43 +4,82 @@
     <title>For The Adults By The Adults</title>
     <style>
         body {
+            margin: 0;
             font-family: Arial;
-            background: #111;
+            background: #0f0f0f;
             color: white;
-            text-align: center;
         }
-        h1 {
-            color: red;
-        }
-        .product {
-            border: 1px solid #444;
-            margin: 20px;
+
+        header {
+            background: black;
             padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            color: red;
+            font-weight: bold;
         }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 40px;
+        }
+
+        .product {
+            background: #1a1a1a;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
         button {
             background: red;
             color: white;
-            padding: 10px 20px;
+            padding: 10px;
             border: none;
+            margin-top: 10px;
             cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background: darkred;
         }
     </style>
 </head>
 <body>
 
-<h1>For The Adults By The Adults</h1>
-<p>No Filter. Just Attitude.</p>
+<header>For The Adults By The Adults</header>
 
-<div class="product">
-    <h2>RCB Attitude Tee</h2>
-    <p>₹349</p>
-    <button>Order Now</button>
-</div>
+<div class="container">
 
-<div class="product">
-    <h2>Dark Humor Tee</h2>
-    <p>₹399</p>
-    <button>Order Now</button>
+    <div class="product">
+        <img src="https://via.placeholder.com/250" />
+        <h3>RCB Attitude Tee</h3>
+        <p>₹349</p>
+        <button>Order Now</button>
+    </div>
+
+    <div class="product">
+        <img src="https://via.placeholder.com/250" />
+        <h3>Dark Humor Tee</h3>
+        <p>₹399</p>
+        <button>Order Now</button>
+    </div>
+
 </div>
 
 </body>
